@@ -109,8 +109,6 @@ void remove_element(Node **head, int element)
             Node *temp = curr->next;
             curr->next = curr->next->next;
             free(temp);
-            return ;
         }
-        curr = curr->next;
     }
 }
